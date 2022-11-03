@@ -24,12 +24,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/web-page")
 public class Web_Page {
     
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.GET)
     String home(
-            @RequestParam(value = "url", defaultValue = "") String url,
+            @RequestParam(value = "url", defaultValue = "https://www.timothysdigitalsolutions.com") String url,
             @RequestParam(value = "page", defaultValue = "") String page,
             @RequestParam(value = "page_preview", defaultValue = "") String page_preview,
-            @RequestParam(value = "show_website", defaultValue = "") String show_website
+            @RequestParam(value = "show_website", defaultValue = "yes") String show_website
     ) {
         
         Connection use_open_connection;
