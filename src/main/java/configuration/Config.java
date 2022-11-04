@@ -32,7 +32,7 @@ public class Config {
     
     public static void call_database_information() throws IOException {
         
-        String url_for_get_request = "https://tds-webhook.herokuapp.com/tds-webhook-company-website";
+        /*String url_for_get_request = "https://tds-webhook.herokuapp.com/tds-webhook-company-website";
         
         RestTemplate restTemplate = new RestTemplate();
 
@@ -54,19 +54,19 @@ public class Config {
             
             if (credentials.length == 5) {
                 
-                try {
+                try {*/
 
-                    database_server = credentials[0].trim();
-                    database_username = credentials[1].trim();
-                    database_password = credentials[2].trim();
-                    database_port = credentials[3].trim();
-                    database_name = credentials[4].trim();
+                    database_server = "82.163.176.10";
+                    database_username = "timothys_tim";
+                    database_password = "ranger12";
+                    database_port = "3306";
+                    database_name = "timothys_digital_solutions_company_website";
                     
                     database_url = "jdbc:mysql://" + database_server + ":" + database_port + "/" + database_name;
-                } catch (Exception e) {
+                /*} catch (Exception e) {
                 }
             }
-        }
+        }*/
     }
     
     public static Connection openConnection() throws IOException {
