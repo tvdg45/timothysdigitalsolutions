@@ -91,6 +91,11 @@ public abstract class Web_Page_Processor extends configuration.Config {
             LOGGER.log(Level.INFO, "{0}", e);
             
             output = 0;
+        } catch (Exception e) {
+            
+            LOGGER.log(Level.INFO, "{0}", e);
+            
+            output = 0;
         }
         
         return output;
