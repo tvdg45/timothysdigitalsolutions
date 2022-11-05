@@ -30,7 +30,7 @@ public class Config {
     private static String database_name;
     private static String database_url;
     
-    public static void call_database_information() throws IOException {
+    public static void call_database_information() {
         
         /*String url_for_get_request = "https://tds-webhook.herokuapp.com/tds-webhook-company-website";
         
